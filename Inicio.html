@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD.ALMANARA</title>
+    <link rel="stylesheet" href="estilizando.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor-bolinha" id="cursor-bolinha"></div>
+
+
+<nav>
+    <div class="nav-left">
+        <ul>
+            <li><a href="#" class="active">DOCUMENTAÇÃO</a></li>
+            <li><a href="JD_ALMANARA.html">DEVOCIONAL</a></li>
+        </ul>
+    </div>
+    
+    <div class="nav-right">
+        <img src="logo.png" alt="Logo JD Almanara" class="logo">
+        <h2 class="titulo">JD ALMANARA</h2>
+    </div>
+</nav>
+
+
+
+<div class="Texto-image">  
+    <div class="documention">
+        <h2>Um espaço diário para se conectar com Deus.</h2>
+        <h3>
+            Devocionais, louvores e versículos para inspirar sua caminhada espiritual.
+            Simples. Profundo. Seu momento com Deus começa aqui.
+        </h3>
+    </div>
+
+    <div class="biblia-container">
+  <video autoplay muted loop class="video-biblia">
+    <source src="biblia.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+</div>
+
+</div>
+
+<div class="devocion">
+    <a href="JD_ALMANARA.html" class="botao-shop">Comece agora</a>
+</div>
+
+<div class="redes">
+    <h4> Quer mais inspiração no seu dia?</h4>
+    <h4>Siga o JD Almanara nas redes sociais:</h4>
+    <h4><b>
+            Instagram   
+            @adperusjardimalmanara
+        
+    </b></h4>
+
+</div>
+
+
+</body>
+
+<script>
+      const bolinha = document.getElementById('cursor-bolinha');
+
+  document.addEventListener('mousemove', (e) => {
+    bolinha.style.left = e.clientX + 'px';
+    bolinha.style.top = e.clientY + 'px';
+  });
+
+</script>
+</html>

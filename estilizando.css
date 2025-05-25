@@ -1,0 +1,223 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* Navbar geral */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Parte da esquerda da navbar (título + menu) */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Título */
+.titulo {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Menu UL */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 32px;
+    padding: 0;
+    gap: 32px; /* AQUI é o espaçamento entre os itens */
+}
+
+/* Itens do menu */
+nav ul li {
+    position: relative;
+}
+
+/* Links do menu */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Barrinha animada */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #4F46E5;
+    transition: width 0.3s ease;
+}
+
+/* Hover e item ativo */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #4F46E5;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+/* Parte da direita (ícones futuros) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto; /* AQUI está o segredo: joga pra direita */
+}
+
+
+.titulo {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* define espaço entre logo e o texto */
+}
+
+
+
+.documention {
+    font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; ;
+    text-align: left;
+    width: 500px;
+    padding: 25px;
+}
+
+.documention-2 {
+    font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; ;
+    text-align: left;
+    width: 500px;
+}
+
+.devocion{
+    font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; ;
+    width: 1000px;
+    margin-left: 35px;
+    font-size: 18px;
+    
+}
+
+.botao-shop {
+  position: relative;
+  display: inline-block; 
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.botao-shop::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #4F46E5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.botao-shop:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+  
+
+
+.Texto-image {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.image img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cursor-bolinha {
+  width: 12px;
+  height: 12px;
+  background-color: #000000; 
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+  box-shadow: 0 0 8px #000000;;
+}
+
+.redes {
+    text-align: center;
+    width: 1300px;
+    padding-left: 20px;
+    justify-content: center;
+     font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; 
+    margin-top: 100px;
+   
+}
+
+ .biblia-container {
+    right: 20px;
+    bottom: 20px;
+    width: 700px;
+    z-index: 15;
+    padding: 20px;
+   
+  }
+
+  .video-biblia {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+  }
+
+ .logo {
+    width: 40px;
+    height: auto;
+}
+
+
+
+  

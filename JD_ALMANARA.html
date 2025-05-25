@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AD PERUS - JD ALMANARA</title>
+  <link rel="stylesheet" href="estilo_JD.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cursor-bolinha" id="cursor-bolinha"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left">
+      <ul>
+        <li><a href="Inicio.html">DOCUMENTAÇÃO</a></li>
+        <li><a href="#" class="active">DEVOCIONAL</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <img src="logo.png" alt="Logo JD Almanara" class="logo">
+      <h2 class="titulo">JD ALMANARA</h2>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO FLEX (texto + imagem lado a lado) -->
+  <div class="conteudo-flex">
+
+    <!-- TEXTO -->
+    <div class="texto">
+      <h2>Idolatria do Povo de Israel</h2>
+
+      <p>Desde os tempos antigos, Deus escolheu um povo para Si: a nação de Israel.</p>
+
+      <p>Deus disse a Abrão (mais tarde chamado Abraão): “Sai da tua terra, do meio dos teus parentes e da casa de teu pai, e vai para a terra que Eu te mostrarei. Farei de ti uma grande nação e te abençoarei...” (Gênesis 12:1-2). Embora Abraão já fosse velho, e Sara, sua esposa, estéril, ele creu na promessa de Deus. Pela fé e obediência, Abraão se tornou pai de muitas nações, conforme a vontade do Senhor.</p>
+
+      <p>Através de Abraão, nasceu o povo de Israel, um povo numeroso que foi conduzido por Deus até a Terra Prometida. O Senhor cuidava de Israel com zelo e amor, mas, com o tempo, o povo se afastou d’Ele. Israel começou a adorar deuses falsos e até ofereceu seus filhos em sacrifício a Moloque, algo abominável aos olhos do Senhor (Levítico 18:21; Jeremias 32:35). O povo que havia sido separado para Deus, agora se corrompia.</p>
+
+      <p>Deus desejava habitar no meio de Seu povo, ter um relacionamento íntimo com eles. A presença de Deus era manifesta no meio de Israel, mas, por causa da idolatria, essa presença foi retirada. O povo que antes oferecia sacrifícios ao Senhor passou a cultuar ídolos e a viver distante de Deus.</p>
+
+      <p>Muitas vezes, em nossa jornada cristã, também nos afastamos do Senhor, mesmo depois de tantas bênçãos recebidas. Permitimos que outras coisas tomem o lugar de Deus em nossos corações. Por isso, em certos momentos, não sentimos mais Sua presença como antes — a glória que nos envolvia parece distante.</p>
+
+      <p>Atividades como assistir a filmes, praticar esportes, trabalhar ou ir à academia não são pecado em si. Tudo isso pode fazer parte de uma vida equilibrada e saudável. No entanto, quando colocamos essas coisas acima de Deus, elas se tornam ídolos. O pecado está em deixar Deus em segundo plano.</p>
+
+      <p>Que possamos lembrar, todos os dias, que o mais importante não são os bens materiais nem as ocupações do dia a dia, mas sim a presença constante do “Eu Sou” — o próprio Deus — em nossas vidas. Que Ele seja sempre o primeiro em nosso coração.</p>
+    </div>
+
+    <!-- IMAGEM AO LADO DIREITO -->
+    <div class="imagem">
+      <img src="netflix.png" alt="Imagem ilustrativa">
+    </div>
+
+  </div>
+
+  <!-- SCRIPT CURSOR -->
+  <script>
+    const bolinha = document.getElementById('cursor-bolinha');
+    document.addEventListener('mousemove', (e) => {
+      bolinha.style.left = e.clientX + 'px';
+      bolinha.style.top = e.clientY + 'px';
+    });
+  </script>
+  
+</body>
+</html>
+
